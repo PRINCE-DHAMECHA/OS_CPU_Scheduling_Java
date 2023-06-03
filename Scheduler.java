@@ -6,7 +6,7 @@ package SchedulingAlgorithms;
 import java.util.*;
 
 
-public class Schedule {
+public class Scheduler {
     // Storing number of processes
     private final int number_of_processes;
     // Gantt chart where ith element describe which process is there at time interval i to i+1
@@ -20,7 +20,7 @@ public class Schedule {
 
 
     // Constructor that initializes processes and other variables
-    public Schedule(int number_of_processes, int[] arrival_times, int[] burst_times) {
+    public Scheduler(int number_of_processes, int[] arrival_times, int[] burst_times) {
         this.number_of_processes = number_of_processes;
         this.average_waiting_time = -1;
         this.average_turn_around_time = -1;
